@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background: rgb(10,61,98);
+    background: linear-gradient(rgba(10,61,98,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%); 
+}
+
+.nav {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+.nav-link {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: #78E08F;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.nav-link:hover {
+    color: #a9f0b8;
+}
