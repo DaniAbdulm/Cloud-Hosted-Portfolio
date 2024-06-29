@@ -9,9 +9,11 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-html {
+/*full content styling*/
+.container {
     background: rgb(10,61,98);
     background: linear-gradient(rgba(10,61,98,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%); 
+    height: 200vh;
 }
 
 /*top nav bar styling*/
@@ -93,3 +95,92 @@ html {
     background-color: #a9f0b8;
     border-radius: 50px;
 }
+
+.section-title {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+/*Skills section styling*/
+.skills {
+    margin-top: 18rem;
+    text-align: center;
+}
+.languages img{
+    width: 75px;
+    height: auto;
+    filter: invert(76%) sepia(38%) saturate(472%) hue-rotate(80deg) brightness(96%) contrast(91%);
+}
+.languages {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.skills-desc {
+    color: #CCCCCC;
+    width: 80%;
+    margin: auto;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 2.8rem;
+}
+
+/*project carousel*/
+.carousel-container {
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    min-width: 100%;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7fff7f;
+    border: none;
+    color: #1a1a1a;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  button {
+    background-color: #7fff7f;
+    border: none;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #66cc66;
+  }
