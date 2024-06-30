@@ -129,58 +129,7 @@ html, body {
 }
 
 /*project carousel*/
-.carousel-container {
-    font-family: Arial, sans-serif;
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    overflow: hidden;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card {
-    min-width: 100%;
-    margin: 0 15px;
-    padding: 20px;
-    background-color: #3a3a3a;
-    border-radius: 10px;
+.projects {
     text-align: center;
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #7fff7f;
-    border: none;
-    color: #1a1a1a;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .left-arrow {
-    left: 10px;
-  }
-  
-  .right-arrow {
-    right: 10px;
-  }
-  
-  button {
-    background-color: #7fff7f;
-    border: none;
-    color: #1a1a1a;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #66cc66;
-  }
+    margin-top: 12rem;
+}
