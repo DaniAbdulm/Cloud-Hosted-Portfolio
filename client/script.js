@@ -7,10 +7,10 @@ const projects = [
         link: 'https://github.com/DaniAbdulm/react-medical-form-encryption'
     }, 
     {
-        emoji:'💻', 
-        title: 'Web Development Project', 
-        description: 'This is the second sample project.', 
-        link: 'https://github.com/DaniAbdulm/Minigames-Website'
+        emoji:'📡', 
+        title: 'Vultus: Network Analyzer Using Python', 
+        description: 'Vultus is an advanced network analysis tool designed to deliver comprehensive insights into network activity and infrastructure. It combines real-time data visualization with deep analysis capabilities to help network administrators optimize performance, enhance security, and ensure efficient network management.', 
+        link: 'https://github.com/DaniAbdulm/python-network-analyzer'
     }, 
     {
         emoji:'📦', 
@@ -45,6 +45,7 @@ function updateProject(index, isInitial = false) {
     const projectCard = document.querySelector('.project-card');
     const cardText = document.querySelector('.card-text');
     const cardEmoji = document.querySelector('.card-emoji');
+    const cardButton = document.querySelector('.learn-more-button');
 
     if (!isInitial) {
         projectCard.style.transform = 'scale(0.9)';
@@ -56,7 +57,10 @@ function updateProject(index, isInitial = false) {
         document.querySelector('.card-emoji').textContent = project.emoji;
         document.querySelector('.card-title').textContent = project.title;
         document.querySelector('.card-desc').textContent = project.description;
+
         projectCard.style.backgroundColor = randomColor;
+
+        cardButton.setAttribute('onclick', `window.open('${project.link}', '_blank')`);
 
         projectCard.style.transform = 'scale(1)';
         cardText.style.opacity = '1';
