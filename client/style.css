@@ -220,6 +220,7 @@ html, body {
 .cred-row {
     width: 70%;
     margin: auto;
+    margin-bottom: 5rem;
 }
 .cred-title {
     display: flex;
