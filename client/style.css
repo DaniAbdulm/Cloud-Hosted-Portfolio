@@ -154,7 +154,7 @@ html, body {
 }
 .card-emoji {
     font-size: 15rem;
-    background-color: rgba( 0, 0, 0, .3);
+    background-color: rgba( 0, 0, 0, .2);
     border-radius: 15px;
     margin-right: 3rem;
 }
@@ -175,9 +175,9 @@ html, body {
 
 .learn-more-button {
     margin-top: 3rem;
-    padding: 1rem 2rem;
-    font-size: 15px;
-    border-radius: 40px;
+    padding: 1.3rem;
+    font-size: 18px;
+    border-radius: 5px;
     border: 0px;
     background-color: black;
     color: white;
@@ -188,6 +188,7 @@ html, body {
 }
 .learn-more-button:hover {
     background-color: rgb(36, 36, 36);
+    border-radius: 40px;
 }
 
 .card-arrows {
@@ -195,18 +196,62 @@ html, body {
     margin: auto;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .arrow {
-    padding: 3rem 1.5rem;
-    font-size: 4rem;
+    padding: 2rem 1rem;
+    font-size: 2rem;
     border: none;
     border-radius: 40px;
     background: none;
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    margin: 0rem 2rem;
 }
 .arrow:hover {
     color: #78E08F;
+}
+
+/*education and certs styling*/
+.credentials {
+    margin-top: 12rem;
+}
+.cred-row {
+    width: 70%;
+    margin: auto;
+}
+.cred-title {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+}
+.cred-title img{
+    width: 50px;
+    height: auto;
+    filter: invert(76%) sepia(38%) saturate(472%) hue-rotate(80deg) brightness(96%) contrast(91%);
+}
+.cred-header {
+    display: flex;
+}
+.cred-header h3 {
+    color: #78E08F;
+    font-size: 2.5rem;
+    margin-left: 4rem;
+}
+.cred-header-date {
+    color: #929292;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    line-height: 2.5rem;
+    padding-right: 1rem;
+}
+.cred-header-location {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+hr {
+    border: 1px solid lightgrey;
 }

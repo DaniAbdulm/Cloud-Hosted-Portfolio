@@ -11,26 +11,19 @@ const projects = [
         title: 'Vultus: Network Analyzer Using Python', 
         description: 'Vultus is an advanced network analysis tool designed to deliver comprehensive insights into network activity and infrastructure. It combines real-time data visualization with deep analysis capabilities to help network administrators optimize performance, enhance security, and ensure efficient network management.', 
         link: 'https://github.com/DaniAbdulm/python-network-analyzer'
-    }, 
-    {
-        emoji:'📦', 
-        title: 'Security Enhancement', 
-        description: 'This is the third sample project.', 
-        link: 'https://github.com/DaniAbdulm/Pixeon'
     }
-    
     //add more projects here
 ]; 
 
 //color palette array 
 const colorPalette = [
-    '#f368e0', 
+    '#8c7ae6', 
     '#ff9f43',
     '#ee5253',
     '#0abde3',
     '#10ac84',
     '#2e86de',
-    '#341f97'
+    '#5f27cd'
 ];
 
 const initialColor = '#78E08F'; //setting initial color
