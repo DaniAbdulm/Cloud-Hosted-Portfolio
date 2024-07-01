@@ -13,7 +13,7 @@ const projects = [
         link: 'https://github.com/DaniAbdulm/Minigames-Website'
     }, 
     {
-        emoji:'🪪', 
+        emoji:'📦', 
         title: 'Security Enhancement', 
         description: 'This is the third sample project.', 
         link: 'https://github.com/DaniAbdulm/Pixeon'
@@ -37,14 +37,31 @@ const initialColor = '#78E08F'; //setting initial color
 
 let currentIndex = 0; 
 
-function updateProject(index) {
+function updateProject(index, isInitial = false) {
     const project = projects[index]; 
-    const randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+    const randomColor = isInitial ? initialColor : colorPalette[Math.floor(Math.random() * colorPalette.length)];
 
-    document.querySelector('.card-emoji').textContent = project.emoji; 
-    document.querySelector('.card-title').textContent = project.title; 
-    document.querySelector('.card-desc').textContent = project.description;
-    document.querySelector('.project-card').style.backgroundColor = randomColor;
+    // Apply the animation
+    const projectCard = document.querySelector('.project-card');
+    const cardText = document.querySelector('.card-text');
+    const cardEmoji = document.querySelector('.card-emoji');
+
+    if (!isInitial) {
+        projectCard.style.transform = 'scale(0.9)';
+        cardText.style.opacity = '0';
+        cardEmoji.style.opacity = '0';
+    }
+
+    setTimeout(() => {
+        document.querySelector('.card-emoji').textContent = project.emoji;
+        document.querySelector('.card-title').textContent = project.title;
+        document.querySelector('.card-desc').textContent = project.description;
+        projectCard.style.backgroundColor = randomColor;
+
+        projectCard.style.transform = 'scale(1)';
+        cardText.style.opacity = '1';
+        cardEmoji.style.opacity = '1';
+    }, isInitial ? 0 : 250); // No delay on initial load
 }
 
 document.getElementById('arrow-down').addEventListener('click', () => {
@@ -58,4 +75,4 @@ document.getElementById('arrow-up').addEventListener('click', () => {
 }); 
 
 //initialize with the first project by default 
-updateProject(currentIndex);
+updateProject(currentIndex, true);
