@@ -73,3 +73,18 @@ document.getElementById('arrow-up').addEventListener('click', () => {
 
 //initialize with the first project by default 
 updateProject(currentIndex, true);
+
+//implementing email form submission
+document.getElementById('input-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+  
+    emailjs.sendForm('service_bnc8vji', 'template_bcvlpko', this)
+      .then(function(response) {
+         console.log('SUCCESS!', response.status, response.text);
+         alert('Your message has been sent successfully!');
+      }, function(error) {
+         console.log('FAILED...', error);
+         alert('There was an error sending your message. Please try again.');
+      });
+  });
+  

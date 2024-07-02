@@ -111,13 +111,13 @@
                 <p>
                     Let's connect! Whether you have a project in mind, need a full stack developer with cybersecurity expertise, or just want to say hi, feel free to reach out. I'm always open to new opportunities and collaborations.
                 </p>
-                <form action="" class="input-form">
-                    <input type="name" class="contact-input-user" placeholder="Full Name">
-                    <input type="email" class="contact-input-user" placeholder="Email">
-                    <input type="text" class="contact-input-user" placeholder="Subject">
-                    <textarea name="message" id="" placeholder="Message" class="contact-input-message" rows="8" cols="50"></textarea>
+                <form id="input-form" class="input-form">
+                    <input type="name" name="from_name" class="contact-input-user" placeholder="Full Name" required>
+                    <input type="email" name="from_email" class="contact-input-user" placeholder="Email" required>
+                    <input type="text" name="subject" class="contact-input-user" placeholder="Subject">
+                    <textarea name="message" id="" placeholder="Message" class="contact-input-message" rows="8" cols="50" required></textarea>
                     <div class="form-btn">
-                        <button>SUBMIT</button>
+                        <button type="submit">SUBMIT</button>
                     </div>
                 </form>
                 <div class="external-links">
@@ -131,6 +131,12 @@
             </div>
         </div>
         
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("OLpyKB7WqYtNIxDHp");
+            })();
+        </script>
         <script src="script.js"></script>
     </div>
 </body>
