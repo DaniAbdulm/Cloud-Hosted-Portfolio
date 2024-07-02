@@ -9,6 +9,10 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*full content styling*/
 .container {
     background: rgb(10,61,98);
