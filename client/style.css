@@ -51,13 +51,27 @@ html {
 .header-text {
     width: 100%;
 }
+.header-img-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
 .header-img{
-    width: 100%;
+    width: 420px;
+    height: 420px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 20px solid #78E08F;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px black;
 }
 .header-img img {
-    width: 700px;
+    width: 100%;
     height: auto;
+    object-fit: cover;
 }
 .header-title {
     color: white;
