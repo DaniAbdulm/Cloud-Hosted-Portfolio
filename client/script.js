@@ -1,6 +1,12 @@
 //creating array that stores the projects 
 const projects = [
     {
+        emoji:'🔍', 
+        title: 'Pathfinding Algorithm Visualizer', 
+        description: 'A react based web application that visualizes different pathfinding algorithms (currently breadth-first search and depth-first search). The user can create walls and see how the algorithms find the shortest path.', 
+        link: 'https://github.com/DaniAbdulm/pathfinding-visualizer'
+    },
+    {
         emoji:'🧍', 
         title: 'Full Stack Patient Encryption System', 
         description: 'CipherMD is a secure React-based web application designed to manage patient data efficiently. The app leverages Firebase for backend operations, ensuring data is encrypted both at rest and in transit. Key features include user authentication, data encryption/decryption, and a comprehensive dashboard for managing patient records.', 
