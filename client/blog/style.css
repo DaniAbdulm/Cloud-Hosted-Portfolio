@@ -16,9 +16,7 @@ html {
 }
 
 /*full content styling*/
-.container {
 
-}
 
 /*top nav bar styling*/
 .nav {
@@ -39,4 +37,9 @@ html {
 }
 .nav-link:hover {
     color: #a9f0b8;
+}
+
+article a {
+    color: white;
+    text-decoration: none;
 }
